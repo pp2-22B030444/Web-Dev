@@ -1,57 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Facebook</title>
-    <style>
-        .border {
-            background: rgb(236, 245, 243);
-            padding: 250px; /* Add some padding inside the border */
-        }
-        .rounded-square {
-            width: 200px; /* Ширина квадрата */
-            height: 200px; /* Высота квадрата */
-            background-color: white; /* Белый цвет фона */
-            border-radius: 20px; /* Радиус закругления углов */
-            border: 2px solid black; /* Черная граница */
-        }
-        h1{
-            color: rgb(5, 158, 232);
-            font-size: 2.5em;
-            /*margin: 10px;*/
-            /*position: relative;*/
-            /*top:5px;*/
-            position:absolute;
-            top:80px;
-            left:100px;
+  <meta charset="UTF-8">
+  <title>Facebook — Выполните вход или зарегистрируйтесь</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      background: #fff;
+      color: #1c1e21;
+      width: 100%;
+      height: 100%;
+      overflow:auto;
+      overflow-y: scroll;
+    }
+    .content {
+      width: 100%;
+      height: 90vh;
+      margin: 0 0;
+      position: relative;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 90vh;
+      padding: 0 20px;
+    }
+    h1, h2 {
 
-        }
+      text-align: left;
+      position: relative;
+      top:-25px;
+      left: 220px;
+    }
+    h1 {
+      color: #1877f2;
+      font-size: 4em;
+      margin-bottom: 20px;
+    }
+    .left-text {
+      display: flex;
+      font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+      font-size: 28px;
+      font-weight: normal;
+      line-height: 32px;
+      position: relative;
+      top:-40px;
+    }
+    .content-left {
+      width: 50%;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
 
-        h3{
-            /*position: relative;*/
-            /*top:5px;*/
-            font-family: Arial Narrow, sans-serif;
-            position:absolute;
-            top:140px;
-            left:100px;
-            color: #2e3d49;
+    }
+    .content-right {
+      background-color: white;
+      border-radius: 10px;
+      width: 300px;
+      height: 280px;
+      padding: 50px;
+      margin-right: 70px;
+      position: relative;
+      top:-30px;
+      right: 250px;
+      -webkit-box-shadow: -2px 6px 17px -1px rgba(0,0,0,0.54);
+      -moz-box-shadow: -2px 6px 17px -1px rgba(0,0,0,0.54);
+      box-shadow: -2px 6px 17px -1px rgba(0,0,0,0.54);
+    }
+    .btn_new{
+      font-size: 14px;
+      margin-top: 20px;
+      margin-left: 35px;
+      color: white;
+      background-color: #3cc219;
+      border-radius: 10px;
+      width: 240px;
+      height: 50px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+    .btn_new:hover {
+      background-color: #35a915;
 
+    }
 
-        }
+    .log input[type="email"]{
+      margin-top: -25px;
+      margin-left: -28px;
+      border-radius: 5px;
+      width: 320px;
+      height: 15px;
+      padding: 20px;
+      border: 1px solid #ece4e4;
+    }
+    .log input[type="email"]:hover {
+      border-color: #327df8;
+      /*background-color: #00A5D2;*/
+    }
+    .password input[type="password"]{
+      margin-top: 20px;
+      margin-left: -28px;
+      border-radius: 5px;
+      width: 320px;
+      height: 15px;
+      padding: 20px;
+      border: 1px solid #e0d9d9;
 
-    </style>
+    }
+    .password input[type="password"]:hover{
+      border-color: #327df8;
+
+    }
+    .btn_login {
+      margin-top: 20px;
+      margin-left: -28px;
+      display: block;
+      font-size: 20px;
+      color: #fff;
+      border: none;
+      background-color: #1877f2;
+      padding: 14px 16px;
+      width: 363px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .forgot:hover {
+      text-decoration:underline;
+      /*background-color:black;*/
+    }
+    .line{
+      margin-top: 5px;
+      margin-left: -20px;
+      border:1px solid #ece4e4;
+      width: 350px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #c5c0c0;
+      padding-bottom: 2vh;
+    }
+    .footer__content {
+      font-size: 13px;
+      display: flex;
+      margin-bottom: 150px;
+      justify-content: center;
+      flex-direction: column;
+      width: 65%;
+      padding-bottom: -2vh;
+    }
+    .footer__content__languages {
+      border-bottom: 1px solid #f0f2f5;
+      display: inline;
+      justify-content: flex-start;
+      padding-top: 10vh;
+      padding-bottom: 2vh;
+    }
+    .footer__content__languages_link {
+      color: #737373;
+      text-decoration: none;
+    }
+    .footer__content__desc {
+      display: inline;
+      margin: 5vh 0;
+    }
+    .footer__content__desc_link {
+      margin: 5px;
+      color: #737373;
+      text-decoration: none;
+    }
+    .footer__content__copyright {
+      margin: 7px 5px;
+    }
+
+    .down {
+      color: black;
+      font-size: 0.9em;
+      margin-top: 20px;
+      text-align: center;
+      position: relative;
+      top: 50px;
+      left: 615px;
+    }
+  </style>
 </head>
 <body>
-<div class="border">
+<div class="content">
+  <div class="content-left">
+    <h1>facebook</h1>
+    <h2 class="left-text">Facebook помогает вам всегда <br>
+      оставаться на связи и общаться со <br>
+      своими знакомыми.</h2>
+    <p class="down"><a href="https://www.facebook.com/pages/create/?ref_type=registration_form " style="color: #1c1e21;text-decoration:none;"><strong>Создать Страницу</strong></a> знаменитости, музыкальной группы или <br>
+      компании.</p>
+  </div>
+  <div class="content-right">
+    <div class="log"><input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Электронный адрес или номер телефона"
+    /><br /></div>
+    <div class="password"> <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Пароль"
+    /><br /></div>
+      <button class="btn_login">Вход</button><br />
+      <a
+              href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0"
+              style="text-decoration:none;color:#1877f2;font-size:15px;position: relative;left: 90px; top:-10px"
+              class="forgot"
+      >Забыли пароль?</a
+      ><br />
+    <div class="line"></div>
+    <div ><button class="btn_new">Создать новый аккаунт</button></div>
+  </div>
 
-<h1 class="position ">
-    facebook
-</h1>
-<h3 class="position">
-    Facebook помогает вам всегда <br>
-    оставаться на связи и общаться со <br>
-    своими знакомыми.<br>
-</h3>
+
 </div>
+<footer>
+  <div class="footer__content">
+    <div class="footer__content__languages">
+      <a href="#" class="footer__content__languages_link">Русский</a>
+      <a href="#" class="footer__content__languages_link">English (US)</a>
+      <a href="#" class="footer__content__languages_link">Türkçe</a>
+      <a href="#" class="footer__content__languages_link"
+      >Bahasa Indonesia</a
+      >
+      <a href="#" class="footer__content__languages_link">中文(简体)</a>
+      <a href="#" class="footer__content__languages_link">Қазақша</a>
+      <a href="#" class="footer__content__languages_link">Deutsch</a>
+      <a href="#" class="footer__content__languages_link">한국어</a>
+      <a href="#" class="footer__content__languages_link">Shqip</a>
+      <a href="#" class="footer__content__languages_link">Español</a>
+      <a href="#" class="footer__content__languages_link"
+      >Português (Brasil)</a
+      >
+    </div>
+    <div class="footer__content__desc">
+      <a href="#" class="footer__content__desc_link">Регистрация</a>
+      <a href="#" class="footer__content__desc_link">Вход</a>
+      <a href="#" class="footer__content__desc_link">Messenger</a>
+      <a href="#" class="footer__content__desc_link">Facebook Lite</a>
+      <a href="#" class="footer__content__desc_link">Watch</a>
+      <a href="#" class="footer__content__desc_link">Места</a>
+      <a href="#" class="footer__content__desc_link">Игры</a>
+      <a href="#" class="footer__content__desc_link">Marketplace</a>
+      <a href="#" class="footer__content__desc_link">Meta Pay</a>
+      <a href="#" class="footer__content__desc_link">Oculus</a>
+      <a href="#" class="footer__content__desc_link">Portal</a>
+      <a href="#" class="footer__content__desc_link">Instagram</a>
+      <a href="#" class="footer__content__desc_link">Bulletin</a>
+      <a href="#" class="footer__content__desc_link"
+      >Благотворительные акции</a
+      >
+      <a href="#" class="footer__content__desc_link">Услуги</a>
+      <a href="#" class="footer__content__desc_link"
+      >Центр информации о выборах</a
+      >
+      <a href="#" class="footer__content__desc_link"
+      >Политика конфиденциальности</a
+      >
+      <a href="#" class="footer__content__desc_link"
+      >Центр конфиденциальности</a
+      >
+      <a href="#" class="footer__content__desc_link">Группы</a>
+      <a href="#" class="footer__content__desc_link">Информация</a>
+      <a href="#" class="footer__content__desc_link">Создать рекламу</a>
+      <a href="#" class="footer__content__desc_link">Создать страницу</a>
+      <a href="#" class="footer__content__desc_link">Разработчикам</a>
+      <a href="#" class="footer__content__desc_link">Вакансии</a>
+      <a href="#" class="footer__content__desc_link">Файлы cookie</a>
+      <a href="#" class="footer__content__desc_link"
+      >Рекламные предпочтения</a
+      >
+      <a href="#" class="footer__content__desc_link">Условия пользования</a>
+      <a href="#" class="footer__content__desc_link">Справка</a>
+      <a href="#" class="footer__content__desc_link"
+      >Загрузка контактов и лица, не являющиеся пользователями</a
+      >
+    </div>
+    <div class="footer__content__copyright">Meta © 2023</div>
+  </div>
+</footer>
 </body>
 </html>

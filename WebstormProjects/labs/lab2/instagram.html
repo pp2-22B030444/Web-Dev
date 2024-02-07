@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, Arial, sans-serif;
+            background: #fff;
+            color: #1c1e21;
+            width: 100%;
+            height: 100%;
+            overflow:auto;
+            overflow-y: scroll;
+        }
+        .img{
+            position: absolute;
+            top:-15px;
+            left: 200px;
+        }
+        .content-right{
+            border: 1px solid #ece4e4;
+            width: 350px;
+            height: 390px;
+            z-index: 1;
+            position: absolute;
+            top:40px;
+            left:770px;
+        }
+        .logo{
+            position: absolute;
+            left: 85px;
+            top:20px;
+            cursor: pointer;
+        }
+        .login input[type="email"] {
+            font-size: 12px;
+            text-align: left;
+            background-color: #f8f8fa;
+            margin-top: 120px;
+            margin-left: 35px;
+            border-radius: 5px;
+            width: 240px;
+            height: 10px;
+            padding: 15px;
+            border: 1px solid #ece4e4;
+        }
+        .password input[type="password"] {
+            font-size: 12px;
+            text-align: left;
+            background-color: #f8f8fa;
+            margin-top: 8px;
+            margin-left: 35px;
+            border-radius: 5px;
+            width: 240px;
+            height: 10px;
+            padding: 15px;
+            border: 1px solid #ece4e4;
+        }
+        .btn_login {
+            margin-top: 10px;
+            margin-left: 35px;
+            display: block;
+            font-size: 13px;
+            text-align: center;
+            color: #fff;
+            border: none;
+            background-color: #63a4ff;
+            padding: 7px;
+            width: 270px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .line{
+            margin-top: 30px;
+            margin-left: 35px;
+            border:1px solid #ece4e4;
+            width: 100px;
+        }
+
+        .or{
+            font-size: 13px;
+            color: #9f9a9a;
+            font-weight: bold;
+            position: absolute;
+            left: 153px;
+            top: 261px;
+        }
+        .line1{
+            margin-top: -2px;
+            margin-left: 200px;
+            border:1px solid #ece4e4;
+            width: 100px;
+        }
+        .facebook{
+            position: absolute;
+            top:315px;
+            left: 85px;
+        }
+        .faceicon{
+            font-size: 13px;
+            color: #1464e1;
+            position: relative;
+            top:17px;
+            left: 110px;
+            cursor: pointer;
+
+        }
+        .down{
+            text-align: center;
+            font-size: 13px;
+            font-family: Helvetica, Arial, sans-serif;
+            border: 1px solid #ece4e4;
+            width: 350px;
+            height: 50px;
+            z-index: 1;
+            position: relative;
+            top:50px;
+            left:-1px;
+
+        }
+        .playmarket{
+            position: relative;
+            top:70px;
+            left: 50px;
+        }
+        .microsoft{
+            position: relative;
+            top:70px;
+            left: 50px;
+
+        }
+        .links{
+            font-family: Helvetica, Arial, sans-serif;
+            margin-top: 650px;
+            text-align: center;
+            line-height: 60px;
+            word-spacing: 15px;
+
+
+        }
+        .footer__top_link{
+            font-size: 12px;
+            margin-bottom: 108px;
+            text-decoration: none;
+            text-align: center;
+            color:  #8e8e8e;
+            cursor: pointer;
+
+
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="content-left">
+        <img src=".\img\phone2.jpg " height="650" width="750" class="img">
+        <div class="content-right">
+            <img src=".\img\instagram_PNG5.png " height="70" width="180" class="logo">
+            <div class="login"><input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Телефон, имя пользавателя или эл. адрес"
+            /><br /></div>
+            <div class="password"><input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Пароль"
+            /><br /></div>
+
+            <button class="btn_login">Войти</button>
+            <div class="line"></div>
+            <p class="or">ИЛИ</p>
+            <div class="line1"></div>
+            <div >
+                <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26locale%3Dru_RU%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26response_type%3Dcode%252Cgranted_scopes%26scope%3Demail%26state%3D%257B%2522fbLoginKey%2522%253A%25221mgj97sgljy031ysmw6vlz240113w7yfnotu1og9s54dyrw4bfz%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D457ebc39-526c-4f42-9636-0f2d31c3762c%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%25221mgj97sgljy031ysmw6vlz240113w7yfnotu1og9s54dyrw4bfz%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=ru_RU&pl_dbl=0"><img class="facebook" src="./img/facebook.png" width="17px" height="17px"></a>
+                <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26locale%3Dru_RU%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26response_type%3Dcode%252Cgranted_scopes%26scope%3Demail%26state%3D%257B%2522fbLoginKey%2522%253A%25221mgj97sgljy031ysmw6vlz240113w7yfnotu1og9s54dyrw4bfz%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D457ebc39-526c-4f42-9636-0f2d31c3762c%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%25221mgj97sgljy031ysmw6vlz240113w7yfnotu1og9s54dyrw4bfz%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=ru_RU&pl_dbl=0" style="text-decoration: none"><h4 class="faceicon">Войти через Facebook</h4></a>
+            </div>
+
+            <a
+                    href="https://www.instagram.com/accounts/password/reset/"
+                    style="text-decoration:none;color:#051836;font-size:12px;position: relative;left: 125px; top:20px"
+            >Забыли пароль?</a
+            ><br />
+        <div class="down" ><p>У вас ещё нет аккаунта? <a href="https://www.instagram.com/accounts/emailsignup/" style="text-decoration: none; color: #63a4ff;font-weight: bold;">Зарегистрироваться</a>
+        </p></div>
+        <p style="font-size:13px;position: relative;top:55px;left: 95px;font-family: Helvetica, Arial, sans-serif;">Установите приложение.</p>
+        <a aria-label="Скачать из Google Play"  href="https://l.instagram.com/?u=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.instagram.android%26referrer%3Dig_mid%253DF059C8B2-A8CD-4913-AF05-8D815241767A%2526utm_campaign%253DloginPage%2526utm_content%253Dlo%2526utm_source%253Dinstagramweb%2526utm_medium%253Dbadge&amp;e=AT3QG_TI2S-_z3o1BrwYrR-1c4UNlxalhjMeGMRaIAp6ySVqXMvdKGMCKmggf6R6JEio6q8rNWACIh0HhjUzx-saI5a5Q5YgdG9P_NKJyCfqUiI4bPjHEGx1SRSifAfUVujR2b1vebjt_8JPdF_0PA" rel="nofollow" role="link" tabindex="0" target="_blank"><img alt="Скачать из Google Play" class="playmarket"   src="https://static.cdninstagram.com/rsrc.php/v3/yr/r/fDjwyLC88oO.png" style="height: 40px;width: 120px;"></a>
+<!--        <img alt="Скачать из Google Play" class="playmarket" src="https://static.cdninstagram.com/rsrc.php/v3/yr/r/fDjwyLC88oO.png" style="height: 40px;width: 120px;">-->
+        <a aria-label="Скачать с сайта Microsoft"  href="ms-windows-store://pdp/?productid=9nblggh5l9xt&amp;referrer=appbadge&amp;source=www.instagram.com&amp;mode=mini&amp;pos=0%2C0%2C1920%2C1020" ><img alt="Скачать с сайта Microsoft" class="microsoft" src="https://static.cdninstagram.com/rsrc.php/v3/yv/r/_UbeIRgTpG-.png" style="height: 40px;width: 120px;"></a>
+
+        </div>
+    </div>
+    <div class="links">
+        <a href="https://about.meta.com/" class="footer__top_link" >Meta</a>
+        <a href="https://about.instagram.com/" class="footer__top_link" >Информация</a>
+        <a href="https://about.instagram.com/blog/" class="footer__top_link">Блог</a>
+        <a href="https://about.instagram.com/about-us/careers" class="footer__top_link">Вакансии</a>
+        <a href="https://help.instagram.com/" class="footer__top_link">Помощь</a>
+        <a href="https://developers.facebook.com/docs/instagram" class="footer__top_link">API</a>
+        <a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect" class="footer__top_link">Конфиденциальность</a>
+        <a href="https://help.instagram.com/581066165581870/" class="footer__top_link">Условия</a>
+        <a href="https://www.instagram.com/explore/locations/" class="footer__top_link">Места</a>
+        <a href="https://www.instagram.com/web/lite/" class="footer__top_link"><span style=" word-spacing: 2px;">Instagram Lite</span></a>
+        <a href="https://web.facebook.com/help/instagram/261704639352628?_rdc=1&_rdr" class="footer__top_link"><span style=" word-spacing: 2px;">Загрузка контактов и лица, не являющиеся пользователями</span></a>
+        <a href="https://about.meta.com/technologies/meta-verified/" class="footer__top_link"><span style=" word-spacing: 2px;">Meta Verified</span></a>
+    </div>
+    <div class="footer__bottom">
+        <a href="#" class="footer__top_link" style="position:absolute;left: 610px">Русский &#5167;</a>
+        <div class="footer__top_link">© 2023 Instagram from Meta</div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+main{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body{
+
+    font-family: inherit;
+}
+.top{
+    height: 100px;
+    width: 100%;
+}
+.logo{
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.img{
+    width: 105px;
+    height: 22px;
+}
+.left-link{
+    display: flex;
+    text-decoration: none;
+    overflow-x: visible;
+    color: #262626;
+    position: relative;
+    left: 150px;
+    font-size: 13px ;
+    margin-top: -40px;
+    margin-right: 10px;
+    padding: 16px 8px 10px;
+    height: 30px;
+    outline-offset: -2px;
+}
+.words-left{
+    display: flex;
+    position: absolute;
+    top:40px;
+}
+.words_right{
+    display: flex;
+    position:relative;
+    top:-445px;
+    left: 1100px;
+}
+.right-products{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px ;
+    color: #262626;
+    text-decoration: none;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 50px;
+    padding: 16px 8px 10px;
+}
+.photo{
+    margin: 10px;
+    position:absolute;
+    top:70px;
+    left: 2px;
+    height: 430px;
+    width: 1450px;
+}
+.words{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top:150px;
+    left: 120px;
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+
+}
+.btn {
+    margin-top: 30px;
+    margin-left: -2px;
+    display: block;
+    font-size: 15px;
+    text-align: left;
+    border: none;
+    color: #fff;
+    background-color: #1c66ce;
+    padding: 14px;
+    width: 240px;
+    height: 40px;
+    cursor: pointer;
+}
+.main-elements {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    position: relative;
+    top:520px;
+    left: -150px;
+}
+.main-elements-item {
+    width: 20%;
+
+}
+.main__elements__item-img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    width: 350px;
+    height: 200px;
+}
+.main__elements__item-heading {
+    font-size: 1.8125rem;
+    margin: 1.5rem 0;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.main__elements__item-link {
+    display: inline-block;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    color: #0067b8;
+    cursor: pointer;
+    text-align: left;
+    line-height: 1.5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.main__elements__item-link:hover {
+    text-decoration: underline;
+}
