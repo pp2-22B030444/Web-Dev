@@ -95,7 +95,6 @@
       background-color: #35a915;
 
     }
-
     .log input[type="email"]{
       margin-top: -25px;
       margin-left: -28px;
@@ -117,11 +116,9 @@
       height: 15px;
       padding: 20px;
       border: 1px solid #e0d9d9;
-
     }
     .password input[type="password"]:hover{
       border-color: #327df8;
-
     }
     .btn_login {
       margin-top: 20px;
@@ -139,7 +136,6 @@
     }
     .forgot:hover {
       text-decoration:underline;
-      /*background-color:black;*/
     }
     .line{
       margin-top: 5px;
@@ -155,7 +151,7 @@
       color: #c5c0c0;
       padding-bottom: 2vh;
     }
-    .footer__content {
+    .footer-content {
       font-size: 13px;
       display: flex;
       margin-bottom: 150px;
@@ -163,23 +159,27 @@
       flex-direction: column;
       width: 65%;
       padding-bottom: -2vh;
+      position: relative;
+      top:-50px;
     }
-    .footer__content__languages {
+    .footer-content-languages {
       border-bottom: 1px solid #f0f2f5;
       display: inline;
       justify-content: flex-start;
       padding-top: 10vh;
       padding-bottom: 2vh;
+      word-spacing: 10px;
     }
-    .footer__content__languages_link {
+    .footer-content-languages a {
       color: #737373;
       text-decoration: none;
     }
-    .footer__content__desc {
+    .footer-content-desc {
       display: inline;
-      margin: 5vh 0;
+      margin: 1vh 0;
+      word-spacing: 10px;
     }
-    .footer__content__desc_link {
+    .footer-content-desc a{
       margin: 5px;
       color: #737373;
       text-decoration: none;
@@ -187,7 +187,6 @@
     .footer__content__copyright {
       margin: 7px 5px;
     }
-
     .down {
       color: black;
       font-size: 0.9em;
@@ -206,10 +205,9 @@
     <h2 class="left-text">Facebook помогает вам всегда <br>
       оставаться на связи и общаться со <br>
       своими знакомыми.</h2>
-    <p class="down"><a href="https://www.facebook.com/pages/create/?ref_type=registration_form " style="color: #1c1e21;text-decoration:none;"><strong>Создать Страницу</strong></a> знаменитости, музыкальной группы или <br>
-      компании.</p>
+    <p class="down"><a href="https://www.facebook.com/pages/create/?ref_type=registration_form " style="color: #1c1e21;text-decoration:none;"><strong>Создать Страницу</strong></a> знаменитости, музыкальной группы или <br>компании.</p>
   </div>
-  <div class="content-right">
+  <form class="content-right">
     <div class="log"><input
             type="email"
             name="email"
@@ -223,82 +221,60 @@
             placeholder="Пароль"
     /><br /></div>
       <button class="btn_login">Вход</button><br />
-      <a
-              href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0"
-              style="text-decoration:none;color:#1877f2;font-size:15px;position: relative;left: 90px; top:-10px"
-              class="forgot"
-      >Забыли пароль?</a
-      ><br />
+      <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0" style="text-decoration:none;color:#1877f2;font-size:15px;position: relative;left: 90px; top:-10px" class="forgot">Забыли пароль?</a><br />
     <div class="line"></div>
     <div ><button class="btn_new">Создать новый аккаунт</button></div>
-  </div>
-
-
+  </form>
 </div>
 <footer>
-  <div class="footer__content">
-    <div class="footer__content__languages">
-      <a href="#" class="footer__content__languages_link">Русский</a>
-      <a href="#" class="footer__content__languages_link">English (US)</a>
-      <a href="#" class="footer__content__languages_link">Türkçe</a>
-      <a href="#" class="footer__content__languages_link"
-      >Bahasa Indonesia</a
-      >
-      <a href="#" class="footer__content__languages_link">中文(简体)</a>
-      <a href="#" class="footer__content__languages_link">Қазақша</a>
-      <a href="#" class="footer__content__languages_link">Deutsch</a>
-      <a href="#" class="footer__content__languages_link">한국어</a>
-      <a href="#" class="footer__content__languages_link">Shqip</a>
-      <a href="#" class="footer__content__languages_link">Español</a>
-      <a href="#" class="footer__content__languages_link"
-      >Português (Brasil)</a
-      >
+  <div class="footer-content">
+    <div class="footer-content-languages">
+      <a href="#">Русский</a>
+      <a href="#" >English (US)</a>
+      <a href="#" >Türkçe</a>
+      <a href="#" >Bahasa Indonesia</a>
+      <a href="#" >中文(简体)</a>
+      <a href="#" >Қазақша</a>
+      <a href="#" >Deutsch</a>
+      <a href="#" >한국어</a>
+      <a href="#" >Shqip</a>
+      <a href="#" >Español</a>
+      <a href="#" >Português (Brasil)</a>
     </div>
-    <div class="footer__content__desc">
-      <a href="#" class="footer__content__desc_link">Регистрация</a>
-      <a href="#" class="footer__content__desc_link">Вход</a>
-      <a href="#" class="footer__content__desc_link">Messenger</a>
-      <a href="#" class="footer__content__desc_link">Facebook Lite</a>
-      <a href="#" class="footer__content__desc_link">Watch</a>
-      <a href="#" class="footer__content__desc_link">Места</a>
-      <a href="#" class="footer__content__desc_link">Игры</a>
-      <a href="#" class="footer__content__desc_link">Marketplace</a>
-      <a href="#" class="footer__content__desc_link">Meta Pay</a>
-      <a href="#" class="footer__content__desc_link">Oculus</a>
-      <a href="#" class="footer__content__desc_link">Portal</a>
-      <a href="#" class="footer__content__desc_link">Instagram</a>
-      <a href="#" class="footer__content__desc_link">Bulletin</a>
-      <a href="#" class="footer__content__desc_link"
-      >Благотворительные акции</a
-      >
-      <a href="#" class="footer__content__desc_link">Услуги</a>
-      <a href="#" class="footer__content__desc_link"
-      >Центр информации о выборах</a
-      >
-      <a href="#" class="footer__content__desc_link"
-      >Политика конфиденциальности</a
-      >
-      <a href="#" class="footer__content__desc_link"
-      >Центр конфиденциальности</a
-      >
-      <a href="#" class="footer__content__desc_link">Группы</a>
-      <a href="#" class="footer__content__desc_link">Информация</a>
-      <a href="#" class="footer__content__desc_link">Создать рекламу</a>
-      <a href="#" class="footer__content__desc_link">Создать страницу</a>
-      <a href="#" class="footer__content__desc_link">Разработчикам</a>
-      <a href="#" class="footer__content__desc_link">Вакансии</a>
-      <a href="#" class="footer__content__desc_link">Файлы cookie</a>
-      <a href="#" class="footer__content__desc_link"
-      >Рекламные предпочтения</a
-      >
-      <a href="#" class="footer__content__desc_link">Условия пользования</a>
-      <a href="#" class="footer__content__desc_link">Справка</a>
-      <a href="#" class="footer__content__desc_link"
-      >Загрузка контактов и лица, не являющиеся пользователями</a
-      >
+    <div class="footer-content-desc">
+      <a href="#" >Регистрация</a>
+      <a href="#" >Вход</a>
+      <a href="#" >Messenger</a>
+      <a href="#" >Facebook Lite</a>
+      <a href="#" >Watch</a>
+      <a href="#" >Места</a>
+      <a href="#" >Игры</a>
+      <a href="#" >Marketplace</a>
+      <a href="#" >Meta Pay</a>
+      <a href="#" >Oculus</a>
+      <a href="#" >Portal</a>
+      <a href="#" >Instagram</a>
+      <a href="#" >Bulletin</a>
+      <a href="#" >Благотворительные акции</a>
+      <a href="#" >Услуги</a>
+      <a href="#" >Центр информации о выборах</a>
+      <a href="#" >Политика конфиденциальности</a>
+      <a href="#" >Центр конфиденциальности</a>
+      <a href="#" >Группы</a>
+      <a href="#" >Информация</a>
+      <a href="#" >Создать рекламу</a>
+      <a href="#">Создать страницу</a>
+      <a href="#" >Разработчикам</a>
+      <a href="#" >Вакансии</a>
+      <a href="#" >Файлы cookie</a>
+      <a href="#" >Рекламные предпочтения</a>
+      <a href="#" >Условия пользования</a>
+      <a href="#" >Справка</a>
+      <a href="#" >Загрузка контактов и лица, не являющиеся пользователями</a>
     </div>
     <div class="footer__content__copyright">Meta © 2023</div>
   </div>
 </footer>
+
 </body>
 </html>
