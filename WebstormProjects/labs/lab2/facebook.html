@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Facebook — Выполните вход или зарегистрируйтесь</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      background: #fff;
+      color: #1c1e21;
+      width: 100%;
+      height: 100%;
+      overflow:auto;
+      overflow-y: scroll;
+    }
+    .content {
+      width: 100%;
+      height: 90vh;
+      margin: 0 0;
+      position: relative;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 90vh;
+      padding: 0 20px;
+    }
+    h1, h2 {
+
+      text-align: left;
+      position: relative;
+      top:-25px;
+      left: 220px;
+    }
+    h1 {
+      color: #1877f2;
+      font-size: 4em;
+      margin-bottom: 20px;
+    }
+    .left-text {
+      display: flex;
+      font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+      font-size: 28px;
+      font-weight: normal;
+      line-height: 32px;
+      position: relative;
+      top:-40px;
+    }
+    .content-left {
+      width: 50%;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+    }
+    .content-right {
+      background-color: white;
+      border-radius: 10px;
+      width: 300px;
+      height: 280px;
+      padding: 50px;
+      margin-right: 70px;
+      position: relative;
+      top:-30px;
+      right: 250px;
+      -webkit-box-shadow: -2px 6px 17px -1px rgba(0,0,0,0.54);
+      -moz-box-shadow: -2px 6px 17px -1px rgba(0,0,0,0.54);
+      box-shadow: -2px 6px 17px -1px rgba(0,0,0,0.54);
+    }
+    .btn_new{
+      font-size: 14px;
+      margin-top: 20px;
+      margin-left: 35px;
+      color: white;
+      background-color: #3cc219;
+      border-radius: 10px;
+      width: 240px;
+      height: 50px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+    .btn_new:hover {
+      background-color: #35a915;
+
+    }
+    .log input[type="email"]{
+      margin-top: -25px;
+      margin-left: -28px;
+      border-radius: 5px;
+      width: 320px;
+      height: 15px;
+      padding: 20px;
+      border: 1px solid #ece4e4;
+    }
+    .log input[type="email"]:hover {
+      border-color: #327df8;
+      /*background-color: #00A5D2;*/
+    }
+    .password input[type="password"]{
+      margin-top: 20px;
+      margin-left: -28px;
+      border-radius: 5px;
+      width: 320px;
+      height: 15px;
+      padding: 20px;
+      border: 1px solid #e0d9d9;
+    }
+    .password input[type="password"]:hover{
+      border-color: #327df8;
+    }
+    .btn_login {
+      margin-top: 20px;
+      margin-left: -28px;
+      display: block;
+      font-size: 20px;
+      color: #fff;
+      border: none;
+      background-color: #1877f2;
+      padding: 14px 16px;
+      width: 363px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .forgot:hover {
+      text-decoration:underline;
+    }
+    .line{
+      margin-top: 5px;
+      margin-left: -20px;
+      border:1px solid #ece4e4;
+      width: 350px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #c5c0c0;
+      padding-bottom: 2vh;
+    }
+    .footer-content {
+      font-size: 13px;
+      display: flex;
+      margin-bottom: 150px;
+      justify-content: center;
+      flex-direction: column;
+      width: 65%;
+      padding-bottom: -2vh;
+      position: relative;
+      top:-50px;
+    }
+    .footer-content-languages {
+      border-bottom: 1px solid #f0f2f5;
+      display: inline;
+      justify-content: flex-start;
+      padding-top: 10vh;
+      padding-bottom: 2vh;
+      word-spacing: 10px;
+    }
+    .footer-content-languages a {
+      color: #737373;
+      text-decoration: none;
+    }
+    .footer-content-desc {
+      display: inline;
+      margin: 1vh 0;
+      word-spacing: 10px;
+    }
+    .footer-content-desc a{
+      margin: 5px;
+      color: #737373;
+      text-decoration: none;
+    }
+    .footer__content__copyright {
+      margin: 7px 5px;
+    }
+    .down {
+      color: black;
+      font-size: 0.9em;
+      margin-top: 20px;
+      text-align: center;
+      position: relative;
+      top: 50px;
+      left: 615px;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <div class="content-left">
+    <h1>facebook</h1>
+    <h2 class="left-text">Facebook помогает вам всегда <br>
+      оставаться на связи и общаться со <br>
+      своими знакомыми.</h2>
+    <p class="down"><a href="https://www.facebook.com/pages/create/?ref_type=registration_form " style="color: #1c1e21;text-decoration:none;"><strong>Создать Страницу</strong></a> знаменитости, музыкальной группы или <br>компании.</p>
+  </div>
+  <form class="content-right">
+    <div class="log"><input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Электронный адрес или номер телефона"
+    /><br /></div>
+    <div class="password"> <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Пароль"
+    /><br /></div>
+      <button class="btn_login">Вход</button><br />
+      <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0" style="text-decoration:none;color:#1877f2;font-size:15px;position: relative;left: 90px; top:-10px" class="forgot">Забыли пароль?</a><br />
+    <div class="line"></div>
+    <div ><button class="btn_new">Создать новый аккаунт</button></div>
+  </form>
+</div>
+<footer>
+  <div class="footer-content">
+    <div class="footer-content-languages">
+      <a href="#">Русский</a>
+      <a href="#" >English (US)</a>
+      <a href="#" >Türkçe</a>
+      <a href="#" >Bahasa Indonesia</a>
+      <a href="#" >中文(简体)</a>
+      <a href="#" >Қазақша</a>
+      <a href="#" >Deutsch</a>
+      <a href="#" >한국어</a>
+      <a href="#" >Shqip</a>
+      <a href="#" >Español</a>
+      <a href="#" >Português (Brasil)</a>
+    </div>
+    <div class="footer-content-desc">
+      <a href="#" >Регистрация</a>
+      <a href="#" >Вход</a>
+      <a href="#" >Messenger</a>
+      <a href="#" >Facebook Lite</a>
+      <a href="#" >Watch</a>
+      <a href="#" >Места</a>
+      <a href="#" >Игры</a>
+      <a href="#" >Marketplace</a>
+      <a href="#" >Meta Pay</a>
+      <a href="#" >Oculus</a>
+      <a href="#" >Portal</a>
+      <a href="#" >Instagram</a>
+      <a href="#" >Bulletin</a>
+      <a href="#" >Благотворительные акции</a>
+      <a href="#" >Услуги</a>
+      <a href="#" >Центр информации о выборах</a>
+      <a href="#" >Политика конфиденциальности</a>
+      <a href="#" >Центр конфиденциальности</a>
+      <a href="#" >Группы</a>
+      <a href="#" >Информация</a>
+      <a href="#" >Создать рекламу</a>
+      <a href="#">Создать страницу</a>
+      <a href="#" >Разработчикам</a>
+      <a href="#" >Вакансии</a>
+      <a href="#" >Файлы cookie</a>
+      <a href="#" >Рекламные предпочтения</a>
+      <a href="#" >Условия пользования</a>
+      <a href="#" >Справка</a>
+      <a href="#" >Загрузка контактов и лица, не являющиеся пользователями</a>
+    </div>
+    <div class="footer__content__copyright">Meta © 2023</div>
+  </div>
+</footer>
+
+</body>
+</html>

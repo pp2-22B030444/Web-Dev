@@ -30,16 +30,23 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript Debug.box.html.executor": "Run",
     "JavaScript Debug.groupe.html.executor": "Run",
+    "JavaScript Debug.lesson1images.html.executor": "Run",
     "JavaScript Debug.lesson1problem1.html.executor": "Run",
     "JavaScript Debug.lesson1problem5.html.executor": "Run",
     "JavaScript Debug.lesson1problem6.html.executor": "Run",
+    "JavaScript Debug.lesson3internallinks.html.executor": "Run",
+    "JavaScript Debug.lesson3table.html.executor": "Run",
+    "JavaScript Debug.lesson4blog.html.executor": "Run",
+    "JavaScript Debug.lesson4problem3.html.executor": "Run",
     "JavaScript Debug.lesson4problem4.html.executor": "Run",
     "JavaScript Debug.lesson4problem5.html.executor": "Run",
+    "JavaScript Debug.lesson6box.html.executor": "Run",
     "JavaScript Debug.lesson6event.html.executor": "Run",
     "JavaScript Debug.lesson6floating.html.executor": "Run",
     "JavaScript Debug.lesson6groupe.html.executor": "Run",
     "JavaScript Debug.lesson6widthhight.html.executor": "Run",
     "JavaScript Debug.lesson7cursor.html.executor": "Run",
+    "JavaScript Debug.lesson7pseudoclass.html.executor": "Run",
     "JavaScript Debug.widthhight.html.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -67,6 +74,7 @@
       <workItem from="1706542809383" duration="3968000" />
       <workItem from="1706617594028" duration="9147000" />
       <workItem from="1706676087565" duration="1184000" />
+      <workItem from="1706771245327" duration="3952000" />
     </task>
     <servers />
   </component>
