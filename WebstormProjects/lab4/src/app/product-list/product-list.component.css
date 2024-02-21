@@ -1,0 +1,39 @@
+p{
+
+  width: 300px;
+
+}
+/*.product{*/
+/*  height: 20px;*/
+/*  position: relative;*/
+/*  left: 250px;*/
+/*  top:-310px;*/
+/*}*/
+h2{
+  /*font-weight: bold;*/
+  font-size: 30px;
+  /*margin-right: 200px;*/
+  position: relative;
+  left: 500px;
+
+}
+img {
+  max-width: 70%;
+  height: 250px;
+  display: block;
+  /*margin: 0 auto;*/
+  /*margin-right: 200px;*/
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.monitor{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
