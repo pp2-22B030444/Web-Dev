@@ -3,7 +3,7 @@
 <div class="monitor">
 <div *ngFor="let product of products"  >
   <img [src]="product.image"/>
-  <div class="product">
+<!--  <div class="product">-->
   <h3>
     <a
       [title]="product.name + ' details'"
@@ -11,29 +11,42 @@
       {{ product.name }}
     </a>
   </h3>
-
   <p *ngIf="product.description">
     Description: {{ product.description }}
   </p>
-  <p>
-    Rate:
-    <span [ngStyle]="{ fontWeight: 'bold' }">{{
-        product.rating.rate | number : "1.2-4"
-      }}</span>
-  </p>
-  <div >
+<!--  <p>-->
+<!--    Rate:-->
+<!--    <span [ngStyle]="{ fontWeight: 'bold' }">{{-->
+<!--        product.rating.rate | number : "1.2-4"-->
+<!--      }}</span>-->
+<!--  </p>-->
+    <p>
+      Rating:
+      <span [ngStyle]="{ fontWeight: 'bold' }">
+    <ng-container *ngIf="product.rating.rate > 0; else noRating">
+      <span *ngFor="let star of [].constructor(product.rating.rate)">
+        ★
+      </span>
+      <span *ngFor="let star of [].constructor(5 - product.rating.rate)">
+        ☆
+      </span>
+    </ng-container>
+    <ng-template #noRating>
+      No rating available
+    </ng-template>
+  </span>
+    </p>
+    <div >
     <button type="button" (click)="shareTelegram(product.id)">Share</button>
   </div>
   <app-product-alerts
   [product]="product"
   (notify)="onNotify()">
 </app-product-alerts>
-
-
   </div>
 </div>
 
-</div>
+<!--</div>-->
 <!--
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

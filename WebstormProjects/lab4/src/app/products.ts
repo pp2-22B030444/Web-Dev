@@ -90,7 +90,7 @@ export const products = [
       '24 bit, Battery: Li-Ion, OS: iOS 16.',
     image: 'https://resources.cdn-kaspi.kz/img/m/p/h22/h6e/64403478609950.jpg?format=preview-large',
     rating: {
-      rate: 4.5,
+      rate: 4,
 
     },
     link:'https://kaspi.kz/shop/p/apple-iphone-14-pro-256gb-serebristyi-106363307/?c=750000000'
@@ -118,7 +118,7 @@ export const products = [
       '24 bit, Battery: Li-Ion, OS: iOS 16.',
     image: 'https://resources.cdn-kaspi.kz/img/m/p/h63/h0a/64428188729374.jpg?format=preview-large',
     rating: {
-      rate: 3.5,
+      rate: 3,
 
     },
     link:'https://kaspi.kz/shop/p/apple-iphone-14-pro-512gb-chernyi-106363267/?c=750000000'
@@ -132,7 +132,7 @@ export const products = [
       'super‑high‑resolution photos (24MP and 48MP).',
     image: 'https://resources.cdn-kaspi.kz/img/m/p/hdf/hc7/83559837007902.jpg?format=preview-large',
     rating: {
-      rate: 4.5,
+      rate: 4,
 
     },
     link:'https://kaspi.kz/shop/p/apple-iphone-15-pro-512gb-chernyi-113138194/?c=750000000'

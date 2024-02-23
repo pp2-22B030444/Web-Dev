@@ -23,6 +23,10 @@ export class ProductListComponent {
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
   }
+  // calculateStarWidth(rate: number): number {
+  //   // Предположим, что ваша максимальная оценка составляет 5
+  //   return (rate / 5) * 100;
+  // }
 }
 
 
