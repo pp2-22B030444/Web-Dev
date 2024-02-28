@@ -1,0 +1,26 @@
+.category{
+  text-align: center;
+  font-size: 22px;
+  position: relative;
+  top:30px;
+  left: 15px;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  height: 350px;
+}
+.monitor{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 40px;
+}
+img {
+  max-width: 90%;
+  height: 250px;
+  display: block;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  position: relative;
+  top:40px;
+  /*margin-top: 10px;*/
+}
