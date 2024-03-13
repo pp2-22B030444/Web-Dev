@@ -1,0 +1,27 @@
+<!--<h2>Phones and gadgets</h2>-->
+<div class="monitor" >
+  <div *ngFor="let product of products">
+    <img [src]="product.image"/>
+    <h3>
+      <a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">{{ product.name }}</a>
+    </h3>
+    <p *ngIf="product.description">Description: {{ product.description }}</p>
+    <p>Rating:
+      <span [ngStyle]="{ fontWeight: 'bold' }">
+        <ng-container *ngIf="product.rating.rate > 0; else noRating">
+          <span *ngFor="let star of [].constructor(product.rating.rate)">★</span>
+          <span *ngFor="let star of [].constructor(5 - product.rating.rate)">☆</span>
+        </ng-container>
+        <ng-template #noRating>No rating available</ng-template>
+      </span>
+    </p>
+    <div>
+      <button type="button" class="share-button" (click)="liking(product)" [style.color]="product.liked ? 'red' : 'black'">
+        {{ product.liked ? 'Unlike' : 'Like' }} ({{ product.like }})
+      </button>
+      <button type="button" (click)="share(product.link)">Share</button>
+    </div>
+    <button class="delete-button" (click)="deleteProduct(product)">🗑️</button>
+    <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>
+  </div>
+</div>

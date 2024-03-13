@@ -1,0 +1,55 @@
+p{
+  width: 300px;
+}
+h2{
+  font-size: 30px;
+  position: relative;
+  left: 400px;
+}
+h3{
+  width: 300px;
+}
+/*div{*/
+/*  width: 300px;*/
+/*}*/
+img {
+  max-width: 70%;
+  height: 250px;
+  display: block;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.monitor{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.delete-button {
+  /*margin-bottom: 60px;*/
+  background-color: white;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  top:-33px;
+  left: 195px;
+}
+
+.delete-button:hover {
+  background-color: #2da10e;
+}
+.share-button {
+  margin-right: 16px; /* Расстояние между кнопками Share и Like */
+}
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
