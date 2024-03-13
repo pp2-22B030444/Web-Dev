@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="ToDo.css">
+</head>
+<body>
+<script src="script.js"></script>
+<div class="topPage"><h3>
+    ToDo List</h3></div>
+<h1>ToDo List</h1>
+<form class="content">
+    <div class="newtask"><input
+            type="text"
+            name="text"
+            id="text"
+            placeholder="New Task"/>
+    </div>
+    <button class="btn" type="button" onclick="addItem(this)">Add</button>
+<!--    <label for="myCheckbox">Отметить:</label>-->
+<!--    <input type="checkbox" id="myCheckbox" name="myCheckbox">-->
+    <div class="container" id="taskContainer" >
+        <div class="line">
+            <input type="checkbox" id="checkbox1" name="checkbox1">
+            <label for="checkbox1">Fist item.</label>
+            <button class="delete-button" onclick="deleteLine(this)">🗑️</button>
+        </div>
+        <div class="line">
+            <input type="checkbox" id="checkbox2" name="checkbox2">
+            <label for="checkbox2">Second item.</label>
+            <button class="delete-button" onclick="deleteLine(this)">🗑️</button>
+        </div>
+        <div class="line">
+            <input type="checkbox" id="checkbox3" name="checkbox3">
+            <label for="checkbox3">Third item.</label>
+            <button class="delete-button" onclick="deleteLine(this)">🗑️</button>
+        </div>
+    </div>
+</form>
+
+
+
+</body>
+</html>

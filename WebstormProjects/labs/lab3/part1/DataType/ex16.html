@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5.5.2</title>
+    <script>
+        function filterRange(arr, a, b) {
+            return arr.filter((elem) => a <= elem && elem <= b);
+        }
+
+        let arr = [5, 3, 8, 1];
+
+        let filtered = filterRange(arr, 1, 4);
+
+        alert(filtered); // 3,1
+        alert(arr); // 5,3,8,1
+    </script>
+    <script>
+        function filterRangeInPlace(arr, a, b) {
+            for (let i = 0; i < arr.length; i++) {
+                let x = arr[i];
+                if (x < a || x > b) {
+                    arr.splice(i, 1);
+                    i--;
+                }
+            }
+        }
+
+        let myArr = [5, 3, 8, 1];
+
+        filterRangeInPlace(myArr, 1, 4);
+
+        alert(myArr); // [3, 1]
+    </script>
+    <script>
+        let arr = [5, 2, 1, -10, 8];
+        arr.reverse();
+        alert(arr);
+    </script>
+</head>
+<body></body>
+</html>
