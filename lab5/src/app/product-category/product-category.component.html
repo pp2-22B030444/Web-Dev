@@ -1,9 +1,0 @@
-<!--<p>product-category works!</p>-->
-
-<!--<h2>Categories</h2>-->
-<div class="monitor">
-<div *ngFor="let category of categories" class="category">
-  <a class="name" [routerLink]="['/categories', category.id]">{{ category.name }}</a>
-  <img [routerLink]="['/categories', category.id]" [src]="category.image">
-</div>
-</div>
