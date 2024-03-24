@@ -1,0 +1,5 @@
+a = int(input())
+next = "Next to the number " + str(a) + " numbers: " + str(a+1)
+prev = "For the number " + str(a) + " the previous number: " + str(a-1)
+print(next)
+print(prev)
