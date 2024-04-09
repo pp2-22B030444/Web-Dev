@@ -9,10 +9,6 @@ class Category(models.Model):
         verbose_name = 'Category'
         verbose_name_plural = 'Categories'
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(args, kwargs)
-        self.id = None
-
     def __str__(self):
         return f'{self.id}: {self.name}'
 
@@ -28,7 +24,7 @@ class Product(models.Model):
     description = models.TextField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
     count = models.IntegerField()
-    is_active = models.BooleanField(default=True)  # default value added
+    is_active = models.BooleanField(default=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
     class Meta:
@@ -36,10 +32,6 @@ class Product(models.Model):
         verbose_name = 'Product'
         verbose_name_plural = 'Products'
         ordering = ['-price']
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(args, kwargs)
-        self.id = None
 
     def __str__(self):
         return f'{self.id}: {self.name}'
@@ -49,7 +41,7 @@ class Product(models.Model):
             'id': self.id,
             'name': self.name,
             'description': self.description,
-            'price': str(self.price),  # Convert DecimalField to string
+            'price': str(self.price),
             'count': self.count,
             'is_active': self.is_active,
             'category': self.category.name
